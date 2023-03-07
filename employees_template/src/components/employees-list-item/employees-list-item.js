@@ -8,11 +8,11 @@ const EmployeesListItem = ({ name, salary, increase }) => {
 
   return (
     <li className={classNames}>
-      <span className="list-group-item-label">John Smith</span>
+      <span className="list-group-item-label">{name}</span>
       <input
         type="text"
         className="list-group-item-input"
-        defaultValue="1000$"
+        defaultValue={salary + "$"}
       />
       <div className="d-flex justify-content-center align-items-center">
         <button type="button" className="btn-cookie btn-sm ">
